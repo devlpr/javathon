@@ -22,7 +22,10 @@ jcompile:
 
 
 generate:
-	javah Javathon
+	# Pre java 9
+	#javah Javathon
+	# Later than java 
+	javac Javathon.java -h .
 
 
 run: all
@@ -32,6 +35,6 @@ run: all
 
 
 clean:
-	rm libJavathonImp.so
-	rm Javathon.class Main.class
+	rm -f libJavathonImp.so
+	rm -f Javathon.class Main.class
 
