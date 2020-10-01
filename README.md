@@ -7,4 +7,4 @@ This example is stupidly simple but shows the minumum necessary to get something
 The simplest JNI example I could muster up.
 
 ## To build:
-  make
+  Use Java Runtime. exec() to run python script, As an example first create a python script file using shebang and then set it executable.
